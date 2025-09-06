@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<meta charset="UTF-8">
+
+<html>
+<head>
+    <title>Website Pribadi Fedora</title>
+    <script>
+    function ubahWarna() {
+        document.body.style.backgroundColor = "#e6f7ff";
+    }
+</script>
+
+<!-- supaya scroll nya lebih smooth -->
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+
+    /* Atur font dan background */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+
+    /* Header */
+    header {
+        background-color: #ca1515;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Navigasi */
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Section */
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    }
+
+    /* Foto profil */
+    img {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Form */
+    form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    form input[type="submit"] {
+        background-color: #ca1515;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #8c520f;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: white;
+    }
+
+    /* Navigasi dengan animasi garis bawah */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    
+}
+
+#tentang h1 {
+    text-align: center;
+}
+
+#tentang { background: #ca1515; }
+#hobi { background: #ca1515; }
+#portofolio { background: #ca1515; }
+#blog { background: #ca1515; }
+#kontak { background: #ca1515; }
+
+</style>
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <h1>SELAMAT DATANG DI WEBSITE FEDORA</h1>
+        <nav>
+            <a href="#tentang">Tentang</a> 
+            <a href="#hobi">Hobi </a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#blog">Blog</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+        <hr>
+    </header>
+   
+    <!--tentang-->
+    
+    <section id="tentang">
+        <h1>Fedora Ariefa Ardian</h1><br>
+        <img src="Fedora Ariefa A (7).JPG" alt="Foto Saya" style="width:200px; border-radius:10px;">
+        <p>Halo! Nama saya Fedora. Saya sedang belajar HTML agar bisa membuat website sendiri. Saya suka belajar hal baru dan ingin menjadi web developer profesional.</p>
+        <a href="https://www.instagram.com/fedoraard/?next=%2F">Kunjungi media sosial saya</a>
+
+        <!-- Tombol Java Script -->
+         <br><br>
+        <button onclick="ubahWarna()">Ubah Warna Background</button>
+    </section>
+      
+    <!--hobi-->
+    <section id="hobi">
+        <h2>Hobi saya</h2>
+        <ul>
+            <li>Badminton</li>
+            <li>Coding</li>
+            <li>Renang</li>
+        </ul>
+    </section>
+
+    <!--portofolio-->
+    <section id="portofolio">
+        <h2>Portofolio</h2>
+        <p>Ini adalah contoh karya yang saya buat</p>
+    </section>
+
+    <!--blog-->
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Selamat datang di blog saya! Nantikan tulisan terbaru saya di sini.</p>        
+    </section>
+
+    <!--kontak-->
+    <section id="kontak">
+        <h2>Kontak Saya</h2>
+        <form>
+            <label for="nama">Nama: </label><br>
+            <input type="text"id="nama" name="nama"><br><br>    
+
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan"></textarea><br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <hr>
+        <p>&copy; 2025 Website Pribadi Fedora</p>
+    </footer>
+
+
+<script>
+    // JavaScript akan kita tulis di sini
+    alert("Selamat datang di website Fedora!");
+    <button onclick="ubahWarna()">Ubah Warna Background</button>
+    function ubahWarna() {
+        document.body.style.backgroundColor = "#e6f7ff";
+    }
+</script>
+</body>
+</html>
+</html>
